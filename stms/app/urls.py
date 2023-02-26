@@ -5,4 +5,6 @@ from .import views
 urlpatterns = [
     path('',views.home,name="home"),
     path('allcards/',views.allcards,name="allcards"),
+        path('/register',views.register,name="register"),
+    path('/loginPage',views.loginPage,name="loginPage"),
 ]
