@@ -1,0 +1,201 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+        min-height: 100vh;
+        font-family: Verdana, Arial, sans-serif;
+    }
+    
+    .full-page
+    {
+        min-height: 100%;
+        min-width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(pic1.png);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+.navbar-brand{
+	font-size: 15px;
+}
+.navbar-dark{
+    background-color: #67958B;
+    font-size: 15px;
+}
+.navbar-dark a:hover{
+    background-color: #026459;
+
+}
+
+.navbar-toggler-icon{
+    color:#fff;
+    font-size:20px;
+    right: 3px;
+    position:relative;
+}
+.terms-conditions span{
+	color:#fff;
+	font-size:12px;
+	bottom:1px;
+	position:relative;
+}
+.remember-pass span{
+	color:#fff;
+	font-size:15px;
+	bottom:1px;
+	position:relative;
+}
+.loginbtn:hover
+{
+    cursor: pointer;
+}
+#login-form
+{
+    display: none;
+}
+.form-box
+{
+    width:380px;
+    height:550px;
+   position: relative;
+    margin: 3px auto;
+	background:rgba(0,0,0,0.8);
+	padding:3px;
+    overflow: hidden;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #202020;
+	border-radius: 30px;
+    
+}
+.toggle-btn
+{
+    margin-right: 5px;
+    padding: 5px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 130px;
+	height: 100%;
+	background: #67958B;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 200px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+
+    top: 90px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+   
+	width: 100%;
+	padding:2px 0;
+	margin:2px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #fff;
+	outline:none;
+	background: transparent;
+    
+    
+}
+.button-box .toggle-btn
+{
+color: #fff;
+    
+}
+.button-box button
+{
+padding-left: 35px;
+    
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #67958B;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+    color: #fff;
+    
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:12;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 12;
+}
+
+footer{
+
+    
+    background-color: #67958B;
+    width: 100%;
+    color: black;
+}
+footer{
+    height: 6vh;
+    bottom: 0;
+
+}
+footer p{
+    padding:2px;
+    font-size: 1.8vw;
+    text-align: center;
+    color:#D1D1D1
+}
+footer p:hover
+{
+    cursor: pointer;
+    color:  #202020;
+}
