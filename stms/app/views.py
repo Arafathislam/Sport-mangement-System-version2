@@ -1,11 +1,12 @@
 
 from urllib import request
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,HttpResponse
 from django.forms import inlineformset_factory
 from django.contrib.auth.models import User,auth
 from django.contrib.auth import authenticate,login,logout
+from django.contrib import messages
+from .models import User
 
-from app.models import Registration
 # Create your views here.
 
 def home(request):
@@ -27,28 +28,28 @@ def register(request):
         age=request.POST['age']
         phone_number=request.POST['phone_number']
         catalogue=request.POST['catalogue']
-        myuser=Registration(name=name,email=email,password1=password1, password2=password2,gender=gender,age=age,phone_number=phone_number,catalogue=catalogue)
+        
+        myuser=User.crea(fullname=name,email=email,password=password1,gender=gender,age=age,phone_number=phone_number,catalogue=catalogue)
         myuser.save()
-    return render(request,'app/main.html')
+    return render(request,'app/done.html')
 
 
 
 def loginPage(request):
     if request.method=='POST':
-        email=request.POST['email']
-        password=request.POST['password']
+        email = request.POST.get('email')
+        password=request.POST.get('password')
 
-        user=authenticate(email=email,password=password)
+        m=User.objects.get(email=email)
+        
+        # user=authenticate(request,email=email,password=password)
 
-        if user is not None:
-            login(request,user)
+
+        # if user is not None:
+        #     login(request,user)
+        #     return render(request,'app/done.html')
+        # else:
+        #  return render(request,'main.html')
+
+        if(m.email==email and m.password==password):
             return render(request,'app/done.html')
-        else:
-            return redirect('/')
-
-
-
-
-
-
-

@@ -72,7 +72,7 @@
               Register
             </button>
           </div>
-          <form method="post" id="login" class="input-group-login">
+          <form  action="{% url 'login' %}" method="post" id="login" class="input-group-login">
             {% csrf_token %}
             <input
               type="email"
@@ -133,17 +133,16 @@
             />
             <input
               name="gender"
-              type="text"
               class="input-field"
               placeholder="Gender"
-              list="gender"
+              list="gen"
               required
             />
-            <datalist id="gender">
-              <option>Male</option>
-              <option>Female</option>
-              <option>Others</option>
-            </datalist>
+            <datalist id="gen" >
+              <option value="Male">
+              <option value="Female">
+              <option value="Others">
+             </datalist>
             <input
               name="age"
               type="number"
@@ -160,17 +159,17 @@
             />
             <input
               name="catalogue"
-              type="text"
               class="input-field"
-              placeholder="Cateloge"
-              list="cateloge"
+              placeholder="Cataloge"
+              list="cat"
               required
             />
-            <datalist id="cateloge">
-              <option>Present</option>
-              <option>Ex</option>
-              <option>Others</option>
+            <datalist id="cat">
+              <option value="Present">
+              <option value="Ex">
+              <option value="Others">
             </datalist>
+
 
             <div class="terms-conditions">
               <input type="checkbox" class="check-box" /><span
