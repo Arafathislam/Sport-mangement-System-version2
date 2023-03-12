@@ -1,0 +1,480 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{%static 'styles/all.min.css'%}" />
+    <link rel="stylesheet" href="{%static 'styles/index'%}" />
+    <link rel="stylesheet" href="{%static 'styles/registration.css'%}" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a href="{%url 'allcards'%}" class="navbar-brand">Menu</a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container border border-info my-5 mx-5 px-5 col-lg-7 d-flex justify-content-center mx-auto
+       border rounded-3 bg 
+      " style="height: auto;">
+      
+      
+  
+            <form>
+        
+          <div class=" border-bottom my-3">
+          <h5 class="d-flex text-center my-5 
+      text-white justify-content-center">Register for Vollyball</h5>
+    </div>
+              <div class="row g-3 my-2">
+                <label for="teamname" class="col-sm-2 col-form-label text-light " style="font-size: 0.8rem;"
+                  >Team Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center input text-light"
+                    placeholder="Enter Team Name"
+                    aria-label="teamname"
+                  />
+                </div>
+                <label for="dept" class="col-sm-1 col-form-label ml-3  text-light " style="font-size: 0.8rem;">Dept</label>
+                <div class="col">
+                  <select
+                    class="form-select text-light rounded-pill input text-center"
+                    id="validationCustom04"
+                    aria-label="
+                                    dept"
+                    required
+                  >
+                    <!-- <option selected disabled value="">Choose...</option> -->
+                    <option selected>CSE</option>
+                    <option>Pharmacy</option>
+                    <option>BBA</option>
+                    <option>Law</option>
+                    <option>Fashion Design</option>
+                    <option>English</option>
+                  </select>
+                </div>
+                
+              </div>
+
+              <div class="row g-3 my-2">
+                <label for="coachname" class=" text-light col-sm-2 col-form-label text-light " style="font-size: 0.8rem;"
+                  >Coach Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center input text-light"
+                    placeholder="Enter Coach Name"
+                    aria-label="coachname"
+                  />
+                </div>
+                <label for="dept" class="col-sm-1 col-form-label text-light"style="font-size: 0.8rem;">Dept</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center input text-light"
+                    placeholder="Enter Department"
+                    aria-label="dept"
+                  />
+                </div>
+                
+              </div>
+              <div class="row g-3 my-2">
+                <label for="captainname" class="text-light col-sm-2 col-form-label"style="font-size: 0.8rem;"
+                  >Captain Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light input"
+                    placeholder="Enter Captain Name"
+                    aria-label="captainname"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label " style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+    
+              <!-- ...............................Other player.................................................... -->
+    
+              <header class="text-center border-bottom my-4 ">
+                <h6 class=" text-center text-light  my-4">Other Players</h6>
+              </header>
+    
+              <div class="row g-3 my-2">
+                <label for="name" class="col-sm-2 col-form-label " style="font-size: 0.8rem;"
+                  ><span class="me-2">1.</span>Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill text-light text-center"
+                    placeholder="Enter name"
+                    aria-label="name"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label " style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light "
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+              <div class="row g-3 my-2">
+                <label for="name" class="col-sm-2 col-form-label "style="font-size: 0.8rem;"
+                  ><span class="me-2">2.</span>Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter Name"
+                    aria-label="name"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label "style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+              <div class="row g-3 my-2">
+                <label for="name" class="col-sm-2 col-form-label r" style="font-size: 0.8rem;"
+                  ><span class="me-2">3.</span>Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter Name"
+                    aria-label="name"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label " style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+              <div class="row g-3 my-2">
+                <label for="name" class="col-sm-2 col-form-label " style="font-size: 0.8rem;"
+                  ><span class="me-2">4.</span>Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter Name"
+                    aria-label="name"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label " style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+              <div class="row g-3 my-2">
+                <label for="name" class="col-sm-2 col-form-label " style="font-size: 0.8rem;"
+                  ><span class="me-2">5.</span>Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill text-center text-light"
+                    placeholder="Enter Name"
+                    aria-label="name"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label " style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+              <div class="row g-3 my-2">
+                <label for="name" class="col-sm-2 col-form-label text-light" style="font-size: 0.8rem;"
+                  ><span class="me-2">6.</span>Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-light text-center"
+                    placeholder="Enter Name"
+                    aria-label="name"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label " style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-light text-center"
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+              <div class="row g-3 my-2">
+                <label for="name" class="col-sm-2 col-form-label text-light" style="font-size: 0.8rem;"
+                  ><span class="me-2">7.</span>Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter Name"
+                    aria-label="name"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label " style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+              <div class="row g-3 my-2">
+                <label for="name" class="col-sm-2 col-form-label" style="font-size: 0.8rem;"
+                  ><span class="me-2">8.</span>Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter Name"
+                    aria-label="name"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label " style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+              <div class="row g-3 my-2">
+                <label for="name" class="col-sm-2 col-form-label " style="font-size: 0.8rem;"
+                  ><span class="me-2">9.</span>Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter Name"
+                    aria-label="name"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label  text-ligh" style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+        
+              <div class="row g-3 my-2">
+                <label for="name" class="col-sm-2 col-form-label " style="font-size: 0.8rem;"
+                  ><span class="me-2">10.</span>Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter Name"
+                    aria-label="name"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label text-ligh" style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+    
+              <!-- ............................Extra Player........................................ -->
+              <header class="text-center border-bottom m-4 fw-bold">
+                <!-- <button onclick="myFunction()">Extra players</button> -->
+                 <h6 onclick="myFunction()" style="cursor: pointer;" class=" text-light">Extra players</h6>
+                 <p style="font-size: 0.7rem;" class="text-light">Click to add Extra players</p>
+                
+              </header>
+                  <div class="flex" id="myDIV" style=" display: none" >
+              <div class="row g-3 my-2 e" >
+                <label for="name" class="col-sm-2 col-form-label text-ligh" style="font-size: 0.8rem;"
+                  ><span class="me-2">11.</span>Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-ligh"
+                    placeholder="Enter Name"
+                    aria-label="name"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label " style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-ligh"
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+              <div class="row g-3 my-2 ">
+                <label for="name" class="col-sm-2 col-form-label " style="font-size: 0.8rem;"
+                  ><span class="me-2">12.</span>Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-ligh"
+                    placeholder="Enter Nname"
+                    aria-label="name"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label" style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-ligh"
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+              <div class="row g-3 my-2 " >
+                <label for="name" class="col-sm-2 col-form-label " style="font-size: 0.8rem;"
+                  ><span class="me-2">13.</span>Name</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-ligh"
+                    placeholder="Enter Name"
+                    aria-label="name"
+                  />
+                </div>
+    
+                <label for="id" class="col-sm-1 col-form-label " style="font-size: 0.8rem;">Id</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill  text-center text-light"
+                    placeholder="Enter id"
+                    aria-label="id"
+                  />
+                </div>
+              </div>
+    
+            </div>
+            <!-- <div class="my-5">
+              <button type="submit" class="btn btn-primary mt-5 rounded-pill d-flex justify-content-center mx-auto">Submit</button>
+            </div> -->
+                
+            
+            <div class="my-5 ">
+              <div class=" mt-3  d-flex  d-flex justify-content-center mx-2">
+                  <button type="submit" class="btn btn-primary mt-5 rounded-pill mx-2 px-3 py-2">Confirm</button>
+          
+                  <a class="btn btn-primary mt-5 rounded-pill mx-2 px-3 py-2" href="{%url 'allcards'%}" target="_blank">Cancel</a>
+                </div>
+          </div>
+      
+      
+  
+            
+            </form>
+        
+          </div>
+      </div>
+      <script>
+        function myFunction(myDIV) {
+  var x = document.getElementById("myDIV");
+
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+     
+  </script>
+    
+</body>
+</html>

@@ -13,7 +13,7 @@ urlpatterns = [
     path('about/',views.about,name="about"),
     path('badmintion_rule/',views.badminton_rule,name="badmintion_rule"),
     path('chess_rule/',views.chess_rule,name="chess_rule"),
-    path('criket_rule/',views.criket_rule,name="criket_rule"),
+    path('cricket_rule/',views.cricket_rule,name="cricket_rule"),
     path('football_rule/',views.football_rule,name="football_rule"),
     path('highjump_rule/',views.highjump_rule,name="highjump_rule"),
     path('pc3_rule/',views.pc3_rule,name="pc3_rule"),
@@ -26,4 +26,9 @@ urlpatterns = [
     path('table_rule/',views.table_rule,name="table_rule"),
     path('volleyball_rule/',views.volleyball_rule,name="volleyball_rule"),
     path('sprint_rule/',views.sprint_rule,name="sprint_rule"),
+
+    path('cricket_form/',views.cricket_form,name="cricket_form"),
+    path('football_form/',views.football_form,name="football_form"),
+    path('volleyball_form/',views.volleyball_form,name="volleyball_form"),
+    path('kabaddi_form/',views.kabaddi_form,name="kabaddi_form"),
 ]

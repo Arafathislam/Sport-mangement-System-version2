@@ -79,7 +79,7 @@ def chess_rule(request):
      return render(request,'app/chess_rule.html')
 
 
-def criket_rule(request):
+def cricket_rule(request):
      return render(request,'app/cricket.html')
 
 def football_rule(request):
@@ -119,6 +119,19 @@ def volleyball_rule(request):
 
 def sprint_rule(request):
      return render(request,'app/sprint.html')
+
+
+def cricket_form(request):
+     return render(request,'app/cricket_form.html')
+
+def football_form(request):
+     return render(request,'app/football_form.html')
+
+def volleyball_form(request):
+     return render(request,'app/volleyball_form.html')
+
+def kabaddi_form(request):
+     return render(request,'app/kabaddi_form.html')
 
 
 

@@ -1,0 +1,75 @@
+.bg{
+    background-color: rgb(77, 191, 247);
+}
+.form-control{
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.4s 0.4s ease; 
+    text-indent: -100%;
+    opacity: 1;
+ }
+ .form-select{
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+   
+    
+}
+
+ .font{
+    font-weight: 0.7rem;
+ }
+
+ .form-control:focus {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+  .form-select:focus {
+ color: rgb(255, 255, 255);
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+
+label{
+    color: rgb(254, 254, 254);
+}
+
+.btn{
+    border: none;
+    background-color: rgb(77, 191, 247);
+    box-shadow: inset 2px 2px 2px rgb(9, 87, 126), inset -2px -2px 2px rgb(9, 87, 126);
+}
+.btn:focus{
+    background-color: rgb(77, 191, 247);
+    /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+
+     box-shadow: inset 2px 2px 2px rgb(9, 87, 126), inset -2px -2px 2px rgb(9, 87, 126);
+}
+.btn:hover{
+    border: none;
+    background-color: rgb(77, 191, 247);
+    box-shadow: inset 1px 1px 1px rgb(9, 87, 126), inset -1px -1px 1px rgb(9, 87, 126);
+}
+
