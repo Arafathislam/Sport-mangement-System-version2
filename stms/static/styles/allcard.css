@@ -1,0 +1,9 @@
+.inner{
+    overflow: hidden;
+  }
+  .inner{
+    transition: all 1.3s ease;
+  }
+  .inner:hover{
+    transform: scale(1.1);
+  }

@@ -1,0 +1,100 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{%static 'styles/all.min.css'%}" />
+    <link rel="stylesheet" href="{%static 'styles/index.css'%}" />
+    <link rel="stylesheet" href="{%static 'styles/registration2.css'%}" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a href="{%url 'home'%}" class="navbar-brand">Home</a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      
+      <div class="container  my-5 mx-5 px-5 col-lg-5 col-md-4 d-flex justify-content-center mx-auto
+        bg 
+      " style="height: auto;">
+      
+      
+  
+            <form action ="" method="post" autocomplete="off" style="font-family: 'Libre Baskerville', serif;">
+        
+          <div class=" border-bottom my-3">
+          <h5 class="d-flex text-center my-5 
+      text-white justify-content-center">Login</h5>
+    </div>
+            
+
+              <div class="row g-3 my-2">
+                <label for="email" class="  col-sm-3 col-form-label  " style="font-size: 0.8rem;"
+                  >Email</label
+                >
+                <div class="col ">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill text-center input text-light"
+                    placeholder="Enter email"
+                    aria-label="email"
+                    required
+                    name="email"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="row g-3 my-2">
+                <label for="password" class=" col-sm-3 col-form-label"style="font-size: 0.8rem;"
+                  >password</label
+                >
+                <div class="col">
+                  <input
+                    type="password"
+                    class="form-control rounded-pill  text-center text-light input"
+                    placeholder="Enter password"
+                    aria-label="password"
+                    required
+                    name="password"
+                    value=""
+                  />
+                </div>
+    
+             
+              </div>
+              <input type='checkbox'class='text-light'><span  class="text-light px-2 m-3" style="font-size: 0.8rem;">Remember Password</span>
+             
+            
+              <div class="my-4 ">
+                <div class="   d-flex  d-flex justify-content-center mx-2">
+                    <button type="submit" class="btn btn-primary rounded-pill mx-2 px-3 py-2">Confirm</button>
+                    <button type="submit" class="btn btn-primary  rounded-pill mx-2 px-3 py-2">Cancel</button>
+                  </div>
+            </div>
+            </form>
+        
+          </div>
+      </div>
+    
+</body>
+</html>

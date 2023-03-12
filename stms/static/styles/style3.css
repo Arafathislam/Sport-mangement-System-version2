@@ -1,0 +1,61 @@
+
+    html{
+        scroll-behavior: smooth;
+
+    }
+    body{
+        
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+
+    /* header start */
+
+    .navbar{
+        padding:1%;
+        background-color: #67958B;
+
+    }
+    .navbar-icon{
+        color: white;
+
+    }
+    .nav-link{
+        color: white;
+        margin: 10px;
+        border-radius: 5px;
+        transition: .4s;
+
+    }
+    .nav-link:hover{
+        background-color: #026459;
+        color: white;
+        transform: scale(1.1);
+
+    }
+     /* header ends */
+    
+
+    /* Footer Starts */
+    footer{
+        padding: 1% 10%;
+        background: #67958B;
+    }
+    footer a{
+        color: white;
+        margin: 0 10px;
+    }
+    footer a:hover{
+        color: black;
+        
+    }
+
+    /* Footer ends*/
+    @media(max-width:768px){
+        .nav-link{
+            background: rgb(0, 0, 0, 0.3);
+        }
+        .banner-container h1{
+            font-size: 2.5rem;
+        }
+    }

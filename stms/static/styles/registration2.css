@@ -1,0 +1,102 @@
+body{
+    /* background-color: #67958b; */
+    background-color: #8fc4b9;
+    
+   
+}
+
+.bg{
+    background-color: rgb(77, 191, 247);
+    border-radius: 3%;
+    /* border: 3px double #e1e4e4; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    /* opacity: 0.8; */
+}
+.form-control{
+    background: rgb(77, 191, 247);
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px rgb(55, 164, 219), inset -6px -6px 6px rgb(96, 190, 238);
+}
+[placeholder]::-webkit-input-placeholder {
+    
+    
+    color: azure;
+    opacity: 0.8;
+ }
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.4s 0.4s ease; 
+    text-indent: -100%;
+    color: azure;
+    opacity: 0.8;
+ }
+ .form-select{
+    background: rgb(77, 191, 247);
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px rgb(55, 164, 219), inset -6px -6px 6px rgb(96, 190, 238);
+}
+   
+    
+
+
+ .font{
+    font-weight: 0.7rem;
+ }
+
+ .form-control:focus {
+    background: rgb(77, 191, 247);
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px rgb(55, 164, 219), inset -6px -6px 6px rgb(96, 190, 238);
+}
+  
+  .form-select:focus {
+    background: rgb(77, 191, 247);
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px rgb(55, 164, 219), inset -6px -6px 6px rgb(96, 190, 238);
+}
+  
+
+label{
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+}
+
+
+.btn{
+    border: none;
+    background-color: rgb(77, 191, 247);
+    box-shadow: inset 2px 2px 2px rgb(9, 87, 126), inset -2px -2px 2px rgb(9, 87, 126);
+}
+.btn:focus{
+    background-color: rgb(77, 191, 247);
+    /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+
+     box-shadow: inset 2px 2px 2px rgb(9, 87, 126), inset -2px -2px 2px rgb(9, 87, 126);
+}
+.btn:hover{
+    border: none;
+    background-color: rgb(77, 191, 247);
+    box-shadow: inset 1px 1px 1px rgb(9, 87, 126), inset -1px -1px 1px rgb(9, 87, 126);
+}
+
