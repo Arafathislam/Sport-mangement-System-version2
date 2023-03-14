@@ -1,0 +1,50 @@
+ /* navbar Starts */
+ .navbar-brand{
+	font-size: 15px;
+}
+.navbar-dark{
+    background-color: #67958B;
+    font-size: 15px;
+}
+.navbar-dark a:hover{
+    background-color: #026459;
+
+}
+
+.navbar-toggler-icon{
+    color:#fff;
+    font-size:20px;
+    margin-right: 3px;
+    margin-bottom:3px;
+    position:relative;
+}
+
+.loginbtn:hover
+{
+    cursor: pointer;
+}
+
+ /* navbar ends */
+ /* Footer Starts */
+ footer{
+    padding: 1% 10%;
+    background: #67958B;
+}
+footer a{
+    color: white;
+    margin: 0 10px;
+}
+footer a:hover{
+    color: black;
+    
+}
+
+/* Footer ends*/
+@media(max-width:768px){
+    .nav-link{
+        background: rgb(0, 0, 0, 0.3);
+    }
+    .banner-container h1{
+        font-size: 2.5rem;
+    }
+}
