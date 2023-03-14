@@ -133,6 +133,40 @@ def volleyball_form(request):
 def kabaddi_form(request):
      return render(request,'app/kabaddi_form.html')
 
+def video_form(request):
+     return render(request,'app/video_form.html')
+
+def pc3_form(request):
+     return render(request,'app/pc3_form.html')
+
+def badminton_form(request):
+     return render(request,'app/badminton_form.html')
+
+
+def chess_form(request):
+     return render(request,'app/chess_form.html')
+
+def highjump_form(request):
+     return render(request,'app/highjump_form.html')
+
+def pc1_form(request):
+     return render(request,'app/pc1_form.html')
+
+def math_form(request):
+     return render(request,'app/math_form.html')
+
+def ict_form(request):
+     return render(request,'app/ict_form.html')
+
+def rubkis_form(request):
+     return render(request,'app/rubiks_form.html')
+
+def table_form(request):
+     return render(request,'app/table_form.html')
+def sprint_form(request):
+     return render(request,'app/sprint_form.html')
+
+
 
 
 

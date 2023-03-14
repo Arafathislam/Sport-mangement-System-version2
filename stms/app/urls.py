@@ -31,4 +31,16 @@ urlpatterns = [
     path('football_form/',views.football_form,name="football_form"),
     path('volleyball_form/',views.volleyball_form,name="volleyball_form"),
     path('kabaddi_form/',views.kabaddi_form,name="kabaddi_form"),
+    path('video_form/',views.video_form,name="video_form"),
+    path('pc3_form/',views.pc3_form,name="pc3_form"),
+    path('badminton_form/',views.badminton_form,name="badminton_form"),
+    path('chess_form/',views.chess_form,name="chess_form"),
+    path('pc1_form/',views.pc1_form,name="pc1_form"),
+    path('math_form/',views.math_form,name="math_form"),
+    path('ict_form/',views.ict_form,name="ict_form"),
+    path('rubkis_form/',views.rubkis_form,name="rubkis_form"),
+    path('table_form/',views.table_form,name="table_form"),
+    path('sprint_form/',views.sprint_form,name="sprint_form"),
+    path('highjump_form/',views.highjump_form,name="highjump_form"),
+    
 ]
