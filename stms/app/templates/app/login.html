@@ -40,8 +40,8 @@
       
       
   
-            <form action ="" method="post" autocomplete="off" style="font-family: 'Libre Baskerville', serif;">
-        
+            <form action ="{%url 'login'%}" method="POST" autocomplete="off" style="font-family: 'Libre Baskerville', serif;">
+              {%csrf_token%}
           <div class=" border-bottom my-3">
           <h5 class="d-flex text-center my-5 
       text-white justify-content-center">Login</h5>

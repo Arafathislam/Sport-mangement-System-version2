@@ -3,9 +3,9 @@ from urllib import request
 from django.shortcuts import render,redirect,HttpResponse
 from django.forms import inlineformset_factory
 from django.contrib.auth.models import User,auth
-from django.contrib.auth import authenticate,login,logout
+from django.contrib.auth import login,logout,authenticate
 from django.contrib import messages
-from .models import User
+from .models import *
 
 # Create your views here.
 
@@ -15,40 +15,40 @@ def home(request):
 
 
 def register(request):
-    # if request.method == 'POST':
-    #     name=request.POST['name']
-    #     email=request.POST['email']
-    #     password1=request.POST['password1']
-    #     password2=request.POST['password2']
-    #     gender=request.POST['gender']
-    #     age=request.POST['age']
-    #     phone_number=request.POST['phone_number']
-    #     catalogue=request.POST['catalogue']
+    if request.method == 'POST':
+        name=request.POST['name']
+        email=request.POST['email']
+        password1=request.POST['password1']
+        password2=request.POST['password2']
+        gender=request.POST['gender']
+        age=request.POST['age']
+        phone_number=request.POST['phone_number']
+        catalogue=request.POST['catalogue']
         
-    #     myuser=User.crea(fullname=name,email=email,password=password1,gender=gender,age=age,phone_number=phone_number,catalogue=catalogue)
-    #     myuser.save()
+        myuser=User(username=name,email=email,password=password1,gender=gender,age=age,phone_number=phone_number,catalogue=catalogue)
+        myuser.save()
+        return redirect('login')
     return render(request,'app/register.html')
 
 
 
 def loginPage(request):
-    # if request.method=='POST':
-    #     email = request.POST.get('email')
-    #     password=request.POST.get('password')
+    if request.method=='POST':
+        email =request.POST['email']
+        password=request.POST['password']
 
-    #     m=User.objects.get(email=email)
-        
-    #     # user=authenticate(request,email=email,password=password)
+        user=User.objects.get(email=email)
+        print(user.email)
+        print(user.password)
+        if (user.email== email and user.password == password):
+               return render(request,'app/AllCards.html')
 
+        else:
+            redirect('home')
 
-    #     # if user is not None:
-    #     #     login(request,user)
-    #     #     return render(request,'app/done.html')
-    #     # else:
-    #     #  return render(request,'main.html')
+      
 
-    #     if(m.email==email and m.password==password):
-            return render(request,'app/login.html')
+    return render(request,'app/login.html')
 
 def tournament(request):
     return render(request,'app/tournament.html')
@@ -73,7 +73,23 @@ def allcards(request):
 
 
 def badminton_rule(request):
-     return render(request,'app/badminton_rule.html')
+    
+        if request.method == 'POST':
+            teamname=request.POST['teamname']
+            dept=request.POST['dept']
+            captainname=request.POST['captainname']
+            cid=request.POST['cid']
+            name1=request.POST['name1']
+            id1=request.POST['id1']
+            name2=request.POST['name2']
+            id2=request.POST['id2']
+            name3=request.POST['name3']
+            id3=request.POST['id3']
+            myuser=Badminton(teamname=teamname,dept=dept,captainname=captainname,cid=cid,name1=name1,id1=id1,name2=name2,id2=id2,name3=name3,id3=id3)
+            myuser.save()
+            return render(request,'app/AllCards.html')
+
+        return render(request,'app/badminton_rule.html')
 
 def chess_rule(request):
      return render(request,'app/chess_rule.html')

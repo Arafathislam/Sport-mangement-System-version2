@@ -35,14 +35,15 @@
       </nav>
 
       
+
+      
       <div class="container  my-5 mx-5 px-5 col-lg-6 -flex justify-content-center mx-auto
         bg 
       " style="height: auto;">
-      
-      
+       
   
             <form action ="" method="post" autocomplete="off" style="font-family: 'Libre Baskerville', serif;">
-        
+              {%csrf_token%}
           <div class=" border-bottom my-3">
           <h5 class="d-flex text-center my-5 
       text-white justify-content-center">Register</h5>
@@ -91,7 +92,7 @@
                     placeholder="Enter password"
                     aria-label="password"
                     required
-                    name="password"
+                    name="password1"
                     value=""
                   />
                 </div>
@@ -109,7 +110,7 @@
                     placeholder="Enter password"
                     aria-label="password"
                     required
-                    name="password"
+                    name="password2"
                     value=""
                   />
                 </div>
@@ -125,12 +126,11 @@
                   aria-label="gender"
                   required
                   name="gender"
-                  value=""
                 >
                   <!-- <option selected disabled value="">Choose...</option> -->
-                  <option selected>Male</option>
-                  <option>Female</option>
-                  <option>Other</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Others">Other</option>
                   
                 </select>
               </div>
@@ -159,10 +159,10 @@
                       <input
                         type="tel"
                         class="form-control rounded-pill  text-center text-light input"
-                        placeholder="Enter Number"
+                        placeholder="+8801234677777"
                         aria-label="mobile"
                         required
-                        name="mobile"
+                        name="phone_number"
                         value=""
                       />
                     </div>
@@ -175,13 +175,12 @@
                             id="catalouge"
                             aria-label="catalouge"
                             required
-                            name="catalouge"
-                            value=""
+                            name="catalogue"
                           >
                             <!-- <option selected disabled value="">Choose...</option> -->
-                            <option selected>Present</option>
-                            <option>Ex</option>
-                            <option>Others</option>
+                            <option value="Present">Present</option>
+                            <option value="Ex">Ex</option>
+                            <option value="Others">Others</option>
                             
                           </select>
                         </div>
