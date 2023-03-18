@@ -25,7 +25,7 @@ class User(models.Model):
 
 
 class Badminton(models.Model):
- 
+
 
     DEPT_CHOICES=[('CSE','CSE'),
                   ('Pharmacy','Pharmacy'),
@@ -46,11 +46,54 @@ class Badminton(models.Model):
     name3=models.CharField(max_length=20)
     id3=models.IntegerField()
 
-
-
-
     def __str__(self):
         return self.teamname
 
 
 
+class Cricket(models.Model):
+
+
+    DEPT_CHOICES=[('CSE','CSE'),
+                  ('Pharmacy','Pharmacy'),
+                  ('BBA','BBA'),
+                  ('Law','Law'),
+                  ('Fashion Design','Fashion Design'),
+                  ('English','English')
+                  ]
+    
+    teamname=models.CharField(max_length=20)
+    dept=models.CharField(max_length=20,choices=DEPT_CHOICES)
+    captainname=models.CharField(max_length=20)
+    coachname=models.CharField(max_length=20)
+    cid=models.IntegerField()
+    name1=models.CharField(max_length=20)
+    id1=models.IntegerField()
+    name2=models.CharField(max_length=20)
+    id2=models.IntegerField()
+    name3=models.CharField(max_length=20)
+    id3=models.IntegerField()
+    name4=models.CharField(max_length=20)
+    id4=models.IntegerField()
+    name5=models.CharField(max_length=20)
+    id5=models.IntegerField()
+    name6=models.CharField(max_length=20)
+    id6=models.IntegerField()
+    name7=models.CharField(max_length=20)
+    id7=models.IntegerField()
+    name8=models.CharField(max_length=20)
+    id8=models.IntegerField()
+    name9=models.CharField(max_length=20)
+    id9=models.IntegerField()
+    name10=models.CharField(max_length=20)
+    id10=models.IntegerField()
+    name11=models.CharField(max_length=20)
+    id11=models.IntegerField()
+    name12=models.CharField(max_length=20)
+    id12=models.IntegerField()
+    name13=models.CharField(max_length=20)
+    id13=models.IntegerField()
+
+
+    def __str__(self):
+        return self.teamname

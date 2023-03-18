@@ -42,7 +42,7 @@
       
       
   
-            <form action ="" method="post" autocomplete="off" style="font-family: 'Libre Baskerville', serif;" >
+            <form action="" method="post" autocomplete="off" style="font-family: 'Libre Baskerville', serif;" >
               {%csrf_token%}
           <div class=" border-bottom my-3">
           <h5 class="d-flex text-center my-5 
@@ -74,7 +74,7 @@
                     name="dept"
                   >
                     <!-- <option selected disabled value="">Choose...</option> -->
-                    <option selected>CSE</option>
+                    <option value="CSE">CSE</option>
                     <option value="Pharmacy">Pharmacy</option>
                     <option value="BBA">BBA</option>
                     <option value="Law">Law</option>
@@ -109,7 +109,7 @@
                     placeholder="Enter id"
                     aria-label="id"
                     required
-                    name="id"
+                    name="cid"
                     value=""
                   />
                 </div>
