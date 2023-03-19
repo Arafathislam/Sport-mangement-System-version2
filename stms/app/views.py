@@ -663,6 +663,64 @@ def sprint_form(request):
         return render(request,'app/sprint_form.html')
 
 
+def shedule(request):
+     return render(request,'app/shedule.html')
+
+def shedule_cricket(request):
+     
+     return render(request,'app/shedule_cricket.html')
+
+
+def shedule_football(request):
+     
+     return render(request,'app/shedule_football.html')
+
+def shedule_volleyball(request):
+     
+     return render(request,'app/shedule_volleyball.html')
+
+def shedule_kabaddi(request):
+     
+     return render(request,'app/shedule_kabaddi.html')
+
+def shedule_badminton(request):
+     
+     return render(request,'app/shedule_badminton.html')
+
+def shedule_table(request):
+     return render(request,'app/shedule_table.html')
+
+def shedule_chess(request):
+     return render(request,'app/shedule_chess.html')
+
+def shedule_highjump(request):
+     return render(request,'app/shedule_highjump.html')
+
+def shedule_pc1(request):
+     return render(request,'app/shedule_pc1.html')
+
+def shedule_pc3(request):
+     return render(request,'app/shedule_pc3.html')
+
+def shedule_math(request):
+     return render(request,'app/shedule_math.html')
+
+def shedule_ict(request):
+     return render(request,'app/shedule_ict.html')
+
+def shedule_video(request):
+     return render(request,'app/shedule_video.html')
+
+def shedule_sprint(request):
+     return render(request,'app/shedule_sprint.html')
+
+def shedule_rubiks(request):
+     return render(request,'app/shedule_rubiks.html')
+
+def score(request):
+     return render(request,'app/score.html')
+
+
 
 
 

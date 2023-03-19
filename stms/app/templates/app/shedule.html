@@ -38,16 +38,15 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
               <div class="navbar-nav">
 
-                  <a href="" class="nav-item nav-link">All team</a>
-                  <a href="" class="nav-item nav-link">Shedule</a>
-                  <a href="" class="nav-item nav-link">Score</a>
+                  <a href="{%url 'shedule'%}" class="nav-item nav-link">Shedule</a>
+                  <a href="{%url 'score'%}" class="nav-item nav-link">Score</a>
                   <a href="{%url 'home'%}" class="nav-item nav-link">Logout</a>
               </div>
 
           </div>
       </div>
   </nav>
-      <h3 class="text-center fw-bolder mt-5">Game Registration</h3>
+      <h3 class="text-center fw-bolder mt-5">Shedule</h3>
       
         <!-------------- Card ------------ -->
         <div class="p-5 mx-5">
@@ -57,7 +56,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                 
               >
-              <a class="text-decoration-none text-dark" href="{%url 'badmintion_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_badminton'%}">
                 <div class="inner">
                 
                   <img src="{%static 'images/badminton.png'%}" class="card-img-top w-50" alt="...">
@@ -71,7 +70,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                 
               >
-              <a class="text-decoration-none text-dark" href="{%url 'chess_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_chess'%}">
                 <div class="inner">
                   <img src="{%static 'images/chess.png'%}" class="card-img-top w-50" alt="...">
                 <h5 class="card-title fs-5 p-2">Chess</h5>
@@ -82,7 +81,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                 
               >
-              <a class="text-decoration-none text-dark" href="{%url 'cricket_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_cricket'%}">
                 <div class="inner">
                   <img src="{%static 'images/cricket.png'%}" class="card-img-top w-50 h-50" alt="...">
                 <h5 class="card-title fs-5 p-2">Cricket</h5>
@@ -93,7 +92,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                 
               >
-              <a class="text-decoration-none text-dark" href="{%url 'football_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_football'%}">
                 <div class="inner">
                   <img src="{%static 'images/football.png'%}" class="card-img-top w-50 h-50" alt="...">
                 <h5 class="card-title fs-5 p-2">Football</h5>
@@ -104,7 +103,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                 
               >
-              <a class="text-decoration-none text-dark" href="{%url 'highjump_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_highjump'%}">
                 <div class="inner">
                   <img src="{%static 'images/64.png'%}" class="card-img-top w-50 h-50" alt="...">
                 <h5 class="card-title fs-5 p-2">HighJump</h5>
@@ -114,7 +113,7 @@
               <div
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"    
               >
-              <a class="text-decoration-none text-dark" href="{%url 'pc3_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_pc3'%}">
                 <div class="inner">
                   <img src="{%static 'images/programming group.png'%}" class="card-img-top w-50 h-50" alt="...">
                 <h5 class="card-title fs-6">Programming Contest (3 members)</h5>
@@ -125,7 +124,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                
               >
-              <a class="text-decoration-none text-dark" href="{%url 'kabaddi_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_kabaddi'%}">
                 <div class="inner">
                   <img src="{%static 'images/000.jpg'%}" class="card-img-top w-50 h-50" alt="...">
                 <h5 class="card-title">Kabaddi</h5>
@@ -136,7 +135,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                 
               >
-              <a class="text-decoration-none text-dark" href="{%url 'pc1_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_pc1'%}">
                 <div class="inner">
                   <img src="{%static 'images/Programming Single.png'%}" class="card-img-top w-50 h-50" alt="...">
                 <h5 class="card-title">Programming Contest Single</h5>
@@ -147,7 +146,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                 
               >
-              <a class="text-decoration-none text-dark" href="{%url 'math_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_math'%}">
                 <div class="inner">
                   <img src="{%static 'images/math.png'%}" class="card-img-top w-50 h-50" alt="...">
                 <h5 class="card-title">Math Olympiad</h5>
@@ -158,7 +157,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                 
               >
-              <a class="text-decoration-none text-dark" href="{%url 'video_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_video'%}">
                 <div class="inner">
                   <img src="{%static 'images/video game.png'%}" class="card-img-top w-50 h-50" alt="...">
                 <h5 class="card-title fs-6">Video Games (4 members)</h5>
@@ -170,7 +169,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                 
               >
-              <a class="text-decoration-none text-dark" href="{%url 'ict_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_ict'%}">
                 <div class="inner">
                   <img src="{%static 'images/ict.png'%}" class="card-img-top w-50 h-50" alt="...">
                 <h5 class="card-title fs-5 p-2">ICT Olympiad</h5>
@@ -181,7 +180,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                 
               >
-              <a class="text-decoration-none text-dark" href="{%url 'rubiks_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_rubiks'%}">
                 <div class="inner">
                   <img src="{%static 'images/rubik.png'%}" class="card-img-top w-50 h-50" alt="...">
                 <h5 class="card-title fs-5 p-2">Rubiks Cube</h5>
@@ -192,7 +191,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                 
               >
-              <a class="text-decoration-none text-dark" href="{%url 'table_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_table'%}">
                 <div class="inner">
                   <img src="{%static 'images/table-tennis.png'%}" class="card-img-top w-50 h-50" alt="...">
                 <h5 class="card-title fs-5 p-2">Table Tennis</h5>
@@ -203,7 +202,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                 
               >
-              <a class="text-decoration-none text-dark" href="{%url 'volleyball_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_volleyball'%}">
                 <div class="inner">
                   <img src="{%static 'images/volleyball.png'%}" class="card-img-top w-50 h-50" alt="...">
                 <h5 class="card-title fs-5 p-2">Volleyball</h5>
@@ -214,7 +213,7 @@
                 class="card col-sm-1 col-md-4 border-success rounded-4 pt-3 align-items-center shadow"
                 
               >
-              <a class="text-decoration-none text-dark" href="{%url 'sprint_rule'%}">
+              <a class="text-decoration-none text-dark" href="{%url 'shedule_sprint'%}">
                 <div class="inner">
                   <img src="{%static 'images/sprint.png'%}" class="card-img-top w-50 h-50" alt="...">
                 <h5 class="card-title fs-5 p-2">Sprint</h5>

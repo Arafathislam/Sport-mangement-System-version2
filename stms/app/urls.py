@@ -43,4 +43,22 @@ urlpatterns = [
     path('sprint_form/',views.sprint_form,name="sprint_form"),
     path('highjump_form/',views.highjump_form,name="highjump_form"),
     
+
+    path('shedule/',views.shedule,name="shedule"),
+    path('shedule_cricket/',views.shedule_cricket,name="shedule_cricket"),
+    path('shedule_football/',views.shedule_football,name="shedule_football"),
+    path('shedule_kabaddi/',views.shedule_kabaddi,name="shedule_kabaddi"),
+    path('shedule_volleyball/',views.shedule_volleyball,name="shedule_volleyball"),
+    path('shedule_table/',views.shedule_table,name="shedule_table"),
+    path('shedule_chess/',views.shedule_chess,name="shedule_chess"),
+    path('shedule_badminton/',views.shedule_badminton,name="shedule_badminton"),
+    path('shedule_highjump/',views.shedule_highjump,name="shedule_highjump"),
+    path('shedule_pc1/',views.shedule_pc1,name="shedule_pc1"),
+    path('shedule_pc3/',views.shedule_pc3,name="shedule_pc3"),
+    path('shedule_video/',views.shedule_video,name="shedule_video"),
+    path('shedule_math/',views.shedule_math,name="shedule_math"),
+    path('shedule_ict/',views.shedule_ict,name="shedule_ict"),
+    path('shedule_sprint/',views.shedule_sprint,name="shedule_sprint"),
+    path('shedule_rubiks/',views.shedule_rubiks,name="shedule_rubiks"),
+    path('score/',views.score,name="score"),
 ]
