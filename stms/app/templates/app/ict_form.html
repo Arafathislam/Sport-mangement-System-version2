@@ -44,10 +44,12 @@
      
   
             <form action ="" method="post" autocomplete="off" style="font-family: 'Libre Baskerville', serif;" >
-                <div class="">
+                {%csrf_token%}
+              <div class="">
+
           <div class=" border-bottom my-3">
           <h5 class="d-flex text-center my-5 
-      text-white justify-content-center">Registartion form</h5>
+      text-white justify-content-center">Registartion for ICT</h5>
     </div>
               <div class="row g-3 my-5">
                 <label for="teamname" class="col-sm-2 col-form-label " style="font-size: 0.9rem;"
@@ -71,18 +73,16 @@
                     class="form-select text-light rounded-pill input text-center"
                     id="validationCustom04"
                     aria-label="dept"
-                    
-                    name="dept"
-                    value=""
                     required
+                    name="dept"
                   >
                     <!-- <option selected disabled value="">Choose...</option> -->
-                    <option selected>CSE</option>
-                    <option>Pharmacy</option>
-                    <option>BBA</option>
-                    <option>Law</option>
-                    <option>Fashion Design</option>
-                    <option>English</option>
+                    <option value="CSE">CSE</option>
+                    <option value="Pharmacy">Pharmacy</option>
+                    <option value="BBA">BBA</option>
+                    <option value="Law">Law</option>
+                    <option value="Fashion Design">Fashion Design</option>
+                    <option value="English">English</option>
                   </select>
                 </div>
                 
@@ -100,7 +100,7 @@
                     placeholder="Enter Member Name"
                     aria-label="membername"
                     
-                    name="membername"
+                    name="captainname"
                     value=""
                     required
                   />
@@ -114,7 +114,7 @@
                     placeholder="Enter id"
                     aria-label="id"
                     
-                    name="id"
+                    name="cid"
                     value=""
                     required
                   />

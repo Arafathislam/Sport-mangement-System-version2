@@ -45,7 +45,7 @@
       
   
             <form action ="" method="post" autocomplete="off"  style="font-family: 'Libre Baskerville', serif;">
-        
+              {%csrf_token%}
           <div class=" border-bottom my-3">
           <h5 class="d-flex text-center my-5 
       text-white justify-content-center">Video Game</h5>
@@ -74,15 +74,14 @@
                     aria-label="dept"
                     required
                     name="dept"
-                    value=""
                   >
                     <!-- <option selected disabled value="">Choose...</option> -->
-                    <option selected>CSE</option>
-                    <option>Pharmacy</option>
-                    <option>BBA</option>
-                    <option>Law</option>
-                    <option>Fashion Design</option>
-                    <option>English</option>
+                    <option value="CSE">CSE</option>
+                    <option value="Pharmacy">Pharmacy</option>
+                    <option value="BBA">BBA</option>
+                    <option value="Law">Law</option>
+                    <option value="Fashion Design">Fashion Design</option>
+                    <option value="English">English</option>
                   </select>
                 </div>
                 
@@ -112,7 +111,7 @@
                     placeholder="Enter id"
                     aria-label="id"
                     required
-                    name="id"
+                    name="cid"
                     value=""
                   />
                 </div>
@@ -135,7 +134,7 @@
                     placeholder="Enter name"
                     aria-label="name"
                     required
-                    name="name"
+                    name="name1"
                     value=""
                   />
                 </div>
@@ -148,7 +147,7 @@
                     placeholder="Enter id"
                     aria-label="id"
                     required
-                    name="id"
+                    name="id1"
                     value=""
                   />
                 </div>
@@ -164,7 +163,7 @@
                     placeholder="Enter Name"
                     aria-label="name"
                     required
-                    name="name"
+                    name="name2"
                     value=""
                   />
                 </div>
@@ -177,7 +176,7 @@
                     placeholder="Enter id"
                     aria-label="id"
                     required
-                    name="id"
+                    name="id2"
                     value=""
                   />
                 </div>
@@ -193,7 +192,7 @@
                     placeholder="Enter Name"
                     aria-label="name"
                     required
-                    name="name"
+                    name="name3"
                     value=""
                   />
                 </div>
@@ -206,7 +205,7 @@
                     placeholder="Enter id"
                     aria-label="id"
                     required
-                    name="id"
+                    name="id3"
                     value=""
                   />
                 </div>
@@ -222,7 +221,7 @@
                     placeholder="Enter Name"
                     aria-label="name"
                     required
-                    name="name"
+                    name="name4"
                     value=""
                   />
                 </div>
@@ -235,7 +234,7 @@
                     placeholder="Enter id"
                     aria-label="id"
                     required
-                    name="id"
+                    name="id4"
                     value=""
                   />
                 </div>
@@ -259,7 +258,7 @@
                     placeholder="Enter Name"
                     aria-label="name"
                     required
-                    name="name"
+                    name="name5"
                     value=""
                   />
                 </div>
@@ -272,7 +271,7 @@
                     placeholder="Enter id"
                     aria-label="id"
                     required
-                    name="id"
+                    name="id5"
                     value=""
                   />
                 </div>

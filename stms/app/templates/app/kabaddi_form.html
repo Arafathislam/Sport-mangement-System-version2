@@ -40,8 +40,8 @@
       
       
   
-            <form>
-        
+            <form method="post" autocomplete="off">
+              {%csrf_token%}
           <div class=" border-bottom my-3">
           <h5 class="d-flex text-center my-5 
       text-white justify-content-center">Register for Kabaddi</h5>
@@ -56,24 +56,26 @@
                     class="form-control rounded-pill  text-center input text-light"
                     placeholder="Enter Team Name"
                     aria-label="teamname"
+                    name="teamname"
                   />
                 </div>
                 <label for="dept" class="col-sm-1 col-form-label ml-3  text-light " style="font-size: 0.8rem;">Dept</label>
+
                 <div class="col">
                   <select
                     class="form-select text-light rounded-pill input text-center"
                     id="validationCustom04"
-                    aria-label="
-                                    dept"
+                    aria-label="dept"
                     required
+                    name="dept"
                   >
                     <!-- <option selected disabled value="">Choose...</option> -->
-                    <option selected>CSE</option>
-                    <option>Pharmacy</option>
-                    <option>BBA</option>
-                    <option>Law</option>
-                    <option>Fashion Design</option>
-                    <option>English</option>
+                    <option value="CSE">CSE</option>
+                    <option value="Pharmacy">Pharmacy</option>
+                    <option value="BBA">BBA</option>
+                    <option value="Law">Law</option>
+                    <option value="Fashion Design">Fashion Design</option>
+                    <option value="English">English</option>
                   </select>
                 </div>
                 
@@ -89,6 +91,7 @@
                     class="form-control rounded-pill  text-center input text-light"
                     placeholder="Enter Coach Name"
                     aria-label="coachname"
+                    name="coachname"
                   />
                 </div>
                 <label for="dept" class="col-sm-1 col-form-label text-light"style="font-size: 0.8rem;">Dept</label>
@@ -98,6 +101,7 @@
                     class="form-control rounded-pill  text-center input text-light"
                     placeholder="Enter Department"
                     aria-label="dept"
+                    name="dept2"
                   />
                 </div>
                 
@@ -112,6 +116,7 @@
                     class="form-control rounded-pill  text-center text-light input"
                     placeholder="Enter Captain Name"
                     aria-label="captainname"
+                    name="captainname"
                   />
                 </div>
     
@@ -122,6 +127,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter id"
                     aria-label="id"
+                    name="cid"
                   />
                 </div>
               </div>
@@ -142,6 +148,7 @@
                     class="form-control rounded-pill text-light text-center"
                     placeholder="Enter name"
                     aria-label="name"
+                    name="name1"
                   />
                 </div>
     
@@ -152,6 +159,7 @@
                     class="form-control rounded-pill  text-center text-light "
                     placeholder="Enter id"
                     aria-label="id"
+                    name="id1"
                   />
                 </div>
               </div>
@@ -165,6 +173,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter Name"
                     aria-label="name"
+                    name="name2"
                   />
                 </div>
     
@@ -175,6 +184,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter id"
                     aria-label="id"
+                    name="id2"
                   />
                 </div>
               </div>
@@ -188,6 +198,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter Name"
                     aria-label="name"
+                    name="name3"
                   />
                 </div>
     
@@ -198,6 +209,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter id"
                     aria-label="id"
+                    name="id3"
                   />
                 </div>
               </div>
@@ -211,6 +223,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter Name"
                     aria-label="name"
+                    name="name4"
                   />
                 </div>
     
@@ -221,6 +234,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter id"
                     aria-label="id"
+                    name="id4"
                   />
                 </div>
               </div>
@@ -234,6 +248,7 @@
                     class="form-control rounded-pill text-center text-light"
                     placeholder="Enter Name"
                     aria-label="name"
+                    name="name5"
                   />
                 </div>
     
@@ -244,6 +259,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter id"
                     aria-label="id"
+                    name="id5"
                   />
                 </div>
               </div>
@@ -257,6 +273,7 @@
                     class="form-control rounded-pill  text-light text-center"
                     placeholder="Enter Name"
                     aria-label="name"
+                    name="name6"
                   />
                 </div>
     
@@ -267,6 +284,7 @@
                     class="form-control rounded-pill  text-light text-center"
                     placeholder="Enter id"
                     aria-label="id"
+                    name="id6"
                   />
                 </div>
               </div>
@@ -280,6 +298,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter Name"
                     aria-label="name"
+                    name="name7"
                   />
                 </div>
     
@@ -290,6 +309,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter id"
                     aria-label="id"
+                    name="id7"
                   />
                 </div>
               </div>
@@ -303,6 +323,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter Name"
                     aria-label="name"
+                    name="name8"
                   />
                 </div>
     
@@ -313,6 +334,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter id"
                     aria-label="id"
+                    name="id8"
                   />
                 </div>
               </div>
@@ -326,6 +348,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter Name"
                     aria-label="name"
+                    name="name9"
                   />
                 </div>
     
@@ -336,6 +359,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter id"
                     aria-label="id"
+                    name="id9"
                   />
                 </div>
               </div>
@@ -350,6 +374,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter Name"
                     aria-label="name"
+                    name="name10"
                   />
                 </div>
     
@@ -360,6 +385,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter id"
                     aria-label="id"
+                    name="id10"
                   />
                 </div>
               </div>
@@ -382,6 +408,7 @@
                     class="form-control rounded-pill  text-center text-ligh"
                     placeholder="Enter Name"
                     aria-label="name"
+                    name="name11"
                   />
                 </div>
     
@@ -392,6 +419,7 @@
                     class="form-control rounded-pill  text-center text-ligh"
                     placeholder="Enter id"
                     aria-label="id"
+                    name="id11"
                   />
                 </div>
               </div>
@@ -405,6 +433,7 @@
                     class="form-control rounded-pill  text-center text-ligh"
                     placeholder="Enter Nname"
                     aria-label="name"
+                    name="name12"
                   />
                 </div>
     
@@ -415,6 +444,7 @@
                     class="form-control rounded-pill  text-center text-ligh"
                     placeholder="Enter id"
                     aria-label="id"
+                    name="id12"
                   />
                 </div>
               </div>
@@ -428,6 +458,7 @@
                     class="form-control rounded-pill  text-center text-ligh"
                     placeholder="Enter Name"
                     aria-label="name"
+                    name="name13"
                   />
                 </div>
     
@@ -438,6 +469,7 @@
                     class="form-control rounded-pill  text-center text-light"
                     placeholder="Enter id"
                     aria-label="id"
+                    name="id13"
                   />
                 </div>
               </div>
