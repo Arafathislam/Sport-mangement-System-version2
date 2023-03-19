@@ -466,3 +466,16 @@ class Sprint(models.Model):
 
     def __str__(self):
         return self.teamname
+    
+
+class Contact(models.Model):
+     
+     fname=models.CharField(max_length=20)
+     lname=models.CharField(max_length=20)
+     email=models.EmailField(max_length=50,unique=True)
+     mobile=models.CharField(max_length=20)
+     msg=models.CharField(max_length=200)
+
+
+     def __str__(self):
+         return self.fname

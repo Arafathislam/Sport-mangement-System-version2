@@ -59,7 +59,26 @@ def news(request):
     return render(request,'app/news.html')
 
 def contact(request):
-    return render(request,'app/contact.html')
+         if request.method == 'POST':
+            fname=request.POST['fname']
+            lname=request.POST['lname']
+            email=request.POST['email']
+            mobile=request.POST['mobile']
+            msg=request.POST['msg']
+  
+
+
+            user=Contact(fname=fname,
+                         lname=lname,
+                         email=email,
+                         mobile=mobile,   
+                         msg=msg,
+                         )
+            user.save()
+            return redirect('home')   
+
+
+         return render(request,'app/contact.html')
 
 
 def about(request):

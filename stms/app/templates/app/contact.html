@@ -11,62 +11,6 @@
 
 {%block content%}
 
-
-
-    <!--------Mailing System------>
-    <div class="container mt-5">
-      <form class="p-5">
-
-        <div>
-        <div class="row mb-4">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">From</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control bg-secondary bg-opacity-10" id="inputEmail3" placeholder="name@example.com">
-          </div>
-        </div>
-    </div>
-
-    <div>
-        <div class="row mb-4">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">To</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control bg-secondary bg-opacity-10" id="inputEmail3" placeholder="name@example.com">
-          </div>
-        </div>
-    </div>
-
-    <div>
-        <div class="row mb-4">
-          <label for="subject" class="col-sm-2 col-form-label">Subject</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control bg-secondary bg-opacity-10" id="subject">
-          </div>
-        </div>
-    </div>
-
-    <div>
-    <div class="row mb-4">
-            <label for="Attachment" class="col-sm-2 col-form-label">Attachment</label>
-     <div class="col-sm-10">
-        <input type="file" class="form-control " id="inputGroupFile02">
-    </div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-10 col-md-8 col-sm-12">
-            <label for="Textarea" class="form-label"></label>
-            <textarea class="form-control bg-secondary bg-opacity-10" id="Textarea" rows="5" placeholder=" Compose email"></textarea>
-        </div>
-
-        <div class="col-lg-2 col-md-4 p-4 d-grid gap-3">
-            <button type="submit" class="btn btn-outline-secondary mt-3 text-dark"><i class="fa-regular fa-paper-plane px-2"></i>Send</button>
-            <button class="btn btn-outline-secondary text-dark"> <i class="fa-solid fa-xmark px-2"></i>Cancel</button>
-        </div>
-    </div>
-</div>
-</form>
-    </div>
-
     <!-------Contact Us------>
     <div class="container m-auto p-5">
       <h1 class="text-center mb-5 mt-5">Get In Touch</h1>
@@ -75,36 +19,37 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.080576664266!2d90.49721559999999!3d23.601443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b1b754392299%3A0xc1661f4335fc4d72!2z4Kaw4Kaj4Kam4Ka-IOCmquCnjeCmsOCmuOCmvuCmpiDgprjgpr7gprngpr4g4Kas4Ka_4Ka24KeN4Kas4Kas4Ka_4Kam4KeN4Kav4Ka-4Kay4Kav4Ka8!5e0!3m2!1sen!2sbd!4v1678093579498!5m2!1sen!2sbd"></iframe>
         </div> 
         <div class="container">
-          <form>  
+          <form method="post"> 
+            {%csrf_token%} 
             <div class="row mb-2">
               <label for="firstName" class="col-sm-2 col-lg-4 col-form-label">First Name</label>
               <div class="col-sm-10 col-lg-8">
-                <input type="text" class="form-control bg-secondary bg-opacity-10" id="firstName" placeholder="First Name">
+                <input type="text" name="fname"class="form-control bg-secondary bg-opacity-10" id="firstName" placeholder="First Name">
               </div>
             </div>
             <div class="row mb-2">
               <label for="lastName" class="col-sm-2 col-lg-4 col-form-label">Last Name</label>
               <div class="col-sm-10 col-lg-8">
-                <input type="text" class="form-control bg-secondary bg-opacity-10" id="lastName" placeholder="Last Name">
+                <input type="text" name="lname" class="form-control bg-secondary bg-opacity-10" id="lastName" placeholder="Last Name">
               </div>
             </div>
             <div class="row mb-2">
               <label for="email" class="col-sm-2 col-lg-4 col-form-label">Email</label>
               <div class="col-sm-10 col-lg-8">
-                <input type="email" class="form-control bg-secondary bg-opacity-10" id="email" placeholder="Enter your email address">
+                <input type="email" name="email" class="form-control bg-secondary bg-opacity-10" id="email" placeholder="Enter your email address">
               </div>
             </div>
             <div class="row mb-2">
               <label for="phone" class="col-sm-2 col-lg-4 col-form-label">Mobile</label>
               <div class="col-sm-10 col-lg-8">
-                <input type="text" class="form-control bg-secondary bg-opacity-10" id="phone" placeholder="phone number">
+                <input type="text" name="mobile"class="form-control bg-secondary bg-opacity-10" id="phone" placeholder="phone number">
               </div>
             </div>
         <div>
         <div class="row">
             <div class="">
                 <label for="Textarea" class="form-label"></label>
-                <textarea class="form-control bg-secondary bg-opacity-10" id="Textarea" rows="5" placeholder="Message..."></textarea>
+                <textarea name="msg"class="form-control bg-secondary bg-opacity-10" id="Textarea" rows="5" placeholder="Message..."></textarea>
             </div>
         </div>
         <div class="">
