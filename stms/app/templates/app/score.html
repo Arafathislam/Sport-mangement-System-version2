@@ -46,20 +46,12 @@
           <header class="border-bottom mt-5">
 
           </header>
+          {%for t in team%}
           <div>
-            <h3 class="text-center">ALL Game Result</h3>
+            {{t.score_desc}}
 
           </div>
-
-          <div>
-            <h3 class="text-center">Upcoming Event</h3>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id natus temporibus saepe repellendus quasi voluptatibus porro nihil, sunt molestias iure exercitationem! Alias veniam, eaque commodi quam odio quasi et dicta? Dolores, error.
-          </div>
-
-          <div>
-            <h3 class="text-center">Others</h3>
-
-          </div>
+          {%endfor%}
           
 
         </div>

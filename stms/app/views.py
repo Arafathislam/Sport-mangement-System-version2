@@ -10,7 +10,9 @@ import random
 # Create your views here.
 
 def home(request):
-    return render(request,'home.html')
+     team=home_score.objects.all()
+     context={'team':team}
+     return render(request,'home.html',context)
 
 
 
@@ -790,10 +792,14 @@ def shedule_rubiks(request):
      return render(request,'app/shedule_rubiks.html',context)
 
 def score(request):
-     return render(request,'app/score.html')
+     team=home_score.objects.all()
+     context={'team':team}
+     return render(request,'app/score.html',context)
 
 def score_all(request):
-     return render(request,'app/score_all.html')
+     team=home_score.objects.all()
+     context={'team':team}
+     return render(request,'app/score_all.html',context)
 
 
 

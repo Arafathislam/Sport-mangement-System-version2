@@ -576,4 +576,54 @@ class Semi_Final(models.Model):
 
 
 
+class home_score(models.Model):
+    score_desc=models.TextField(null=True, blank=True)
+    upteam1=models.CharField(max_length=200,blank=True)
+    upteam2=models.CharField(max_length=200,blank=True)
+    upteam3=models.CharField(max_length=200,blank=True)
+    upteam4=models.CharField(max_length=200,blank=True)
+    upteam5=models.CharField(max_length=200,blank=True)
+    upteam6=models.CharField(max_length=200,blank=True)
+    uptime1=models.CharField(max_length=200,blank=True)
+    uptime2=models.CharField(max_length=200,blank=True)
+    uptime3=models.CharField(max_length=200,blank=True)
+
+    fteam1=models.CharField(max_length=200,blank=True)
+    fteam2=models.CharField(max_length=200,blank=True)
+    fteam3=models.CharField(max_length=200,blank=True)
+    fteam4=models.CharField(max_length=200,blank=True)
+    fteam5=models.CharField(max_length=200,blank=True)
+    fteam6=models.CharField(max_length=200,blank=True)
+    ftime1=models.CharField(max_length=200,blank=True)
+    ftime2=models.CharField(max_length=200,blank=True)
+    ftime3=models.CharField(max_length=200,blank=True)
+
+    carsol_pic1=models.ImageField(null=True,default="e.png")
+    carsol_pic2=models.ImageField(null=True,default="w.png")
+    carsol_pic3=models.ImageField(null=True,default="e.png")
+    carsol_pic4=models.ImageField(null=True,default="w.png")
+    carsol_pic5=models.ImageField(null=True,default="e.png")
+    carsol_pic6=models.ImageField(null=True,default="w.png")
+
+    dsc1=models.TextField(null=True, blank=True)
+    dsc2=models.TextField(null=True, blank=True)
+    dsc3=models.TextField(null=True, blank=True)
+
+    day1=models.TextField(null=True, blank=True)
+    day2=models.TextField(null=True, blank=True)
+    day3=models.TextField(null=True, blank=True)
+
+    time1=models.TextField(null=True, blank=True)
+    time2=models.TextField(null=True, blank=True)
+    time3=models.TextField(null=True, blank=True)
+
+
+    
+
+
+    
+
+
+
+
 

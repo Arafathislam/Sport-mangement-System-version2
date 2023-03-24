@@ -49,11 +49,19 @@
   </nav>
 
 
+
     <!-- Future Event -->
     <div class="event-title text-center">
       <h1>Future Event</h1>
     </div>
     
+
+
+
+{%for t in team%}
+
+
+
     <section class="container1">
       <div class="testimonial mySwiper">
         <div class="testi-content swiper-wrapper">
@@ -77,17 +85,14 @@
               </div>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              saepe provident dolorem a quaerat quo error facere nihil deleniti
-              eligendi ipsum adipisci, fugit, architecto amet asperiores
-              doloremque deserunt eum nemo.
+              {{t.dsc1}}
             </p>
 
             <i class="bx bxs-quote-alt-left quote-icon"></i>
 
             <div class="details">
-              <span class="date">Date: 20th November</span>
-              <span class="time">Time: 2pm-3pm</span>
+              <span class="date">Date: {{t.day1}}</span>
+              <span class="time">Time: {{t.time1}}</span>
             </div>
           </div>
           <div class="slide swiper-slide">
@@ -108,17 +113,14 @@
               
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              saepe provident dolorem a quaerat quo error facere nihil deleniti
-              eligendi ipsum adipisci, fugit, architecto amet asperiores
-              doloremque deserunt eum nemo.
+              {{t.dsc2}}
             </p>
 
             <i class="bx bxs-quote-alt-left quote-icon"></i>
 
             <div class="details">
-              <span class="date">Date: 20th November</span>
-              <span class="time">Time: 2pm-3pm</span>
+              <span class="date">Date: {{t.day2}}</span>
+              <span class="time">Time: {{t.time2}}</span>
             </div>
           </div>
           <div class="slide swiper-slide">
@@ -139,17 +141,14 @@
               
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              saepe provident dolorem a quaerat quo error facere nihil deleniti
-              eligendi ipsum adipisci, fugit, architecto amet asperiores
-              doloremque deserunt eum nemo.
+              {{t.dsc3}}
             </p>
 
             <i class="bx bxs-quote-alt-left quote-icon"></i>
 
             <div class="details">
-              <span class="date">Date: 20th November</span>
-              <span class="time">Time: 2pm-3pm</span>
+              <span class="date">Date:{{t.day3}}</span>
+              <span class="time">Time: {{t.time3}}</span>
             </div>
           </div>
         </div>
@@ -182,31 +181,33 @@
           </tr>
           <tr>
               <td>1</td>
-              <td>Rpsu Wolves</td>
-              <td>2:1</td>
-              <td>Rpsu Eagles</td>
-              <td>Saturday</td>
+              <td>{{t.upteam1}}</td>
+              <td>VS</td>
+              <td>{{t.upteam2}}</td>
+              <td>{{t.uptime1}}</td>
               <td><a href="{%url 'score_all'%}" class="view-button">View</a></td>
 
           </tr>
+
           <tr>
-              <td>2</td>
-              <td>Rpsu Wolves</td>
-              <td>2:1</td>
-              <td>Rpsu Eagles</td>
-              <td>Saturday</td>
-              <td><a href="{%url 'score_all'%}" class="view-button">View</a></td>
+            <td>2</td>
+            <td>{{t.upteam3}}</td>
+            <td>VS</td>
+            <td>{{t.upteam4}}</td>
+            <td>{{t.uptime2}}</td>
+            <td><a href="{%url 'score_all'%}" class="view-button">View</a></td>
 
-          </tr>
-          <tr>
-              <td>3</td>
-              <td>Rpsu Wolves</td>
-              <td>2:1</td>
-              <td>Rpsu Eagles</td>
-              <td>Saturday</td>
-              <td><a href="{%url 'score_all'%}" class="view-button">View</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>{{t.upteam5}}</td>
+          <td>VS</td>
+          <td>{{t.upteam6}}</td>
+          <td>{{t.uptime3}}</td>
+          <td><a href="{%url 'score_all'%}" class="view-button">View</a></td>
 
-          </tr>
+      </tr>
+
 
   
       </table>
@@ -232,39 +233,53 @@
 
         </tr>
         <tr>
-            <td>1</td>
-            <td>Rpsu Wolves</td>
-            <td>VS</td>
-            <td>Rpsu Eagles</td>
-            <td>Rpsu Wolves</td>
-            <td><a href="{%url 'score_all'%}" class="view-button">View</a></td>
+          <td>1</td>
+          <td>{{t.fteam1}}</td>
+          <td>VS</td>
+          <td>{{t.fteam2}}</td>
+          <td>{{t.ftime1}}</td>
+          <td><a href="{%url 'score_all'%}" class="view-button">View</a></td>
 
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Rpsu Wolves</td>
-            <td>VS</td>
-            <td>Rpsu Eagles</td>
-            <td>Rpsu Wolves</td>
-            <td><a href="{%url 'score_all'%}" class="view-button">View</a></td>
+      </tr>
 
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Rpsu Wolves</td>
-            <td>VS</td>
-            <td>Rpsu Eagles</td>
-            <td>Rpsu Eagles</td>
-            <td><a href="{%url 'score_all'%}" class="view-button">View</a></td>
+      <tr>
+        <td>2</td>
+        <td>{{t.fteam3}}</td>
+        <td>VS</td>
+        <td>{{t.fteam4}}</td>
+        <td>{{t.ftime2}}</td>
+        <td><a href="{%url 'score_all'%}" class="view-button">View</a></td>
 
-        </tr>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>{{t.fteam5}}</td>
+      <td>VS</td>
+      <td>{{t.fteam6}}</td>
+      <td>{{t.ftime3}}</td>
+      <td><a href="{%url 'score_all'%}" class="view-button">View</a></td>
+
+  </tr>
 
 
    
     </table>
     </div>
+
   </section>
   
+
+
+{%endfor%}
+
+
+
+
+
+
+
+
+
   <footer>
     <section>
      <div class="row text-white">
