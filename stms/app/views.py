@@ -6,7 +6,7 @@ from django.contrib.auth.models import User,auth
 from django.contrib.auth import login,logout,authenticate
 from django.contrib import messages
 from .models import *
-
+import random
 # Create your views here.
 
 def home(request):
@@ -92,7 +92,7 @@ def allcards(request):
 
 
 def badminton_rule(request):
-    
+        
         return render(request,'app/badminton_rule.html')
 
 def chess_rule(request):
@@ -686,31 +686,47 @@ def shedule(request):
      return render(request,'app/shedule.html')
 
 def shedule_cricket(request):
-     
-     return render(request,'app/shedule_cricket.html')
+     team=Cricket.objects.all()
+
+     context={'team':team}
+     return render(request,'app/shedule_cricket.html',context)
 
 
 def shedule_football(request):
-     
-     return render(request,'app/shedule_football.html')
+     team=Football.objects.all()
+
+     context={'team':team}     
+     return render(request,'app/shedule_football.html',context)
 
 def shedule_volleyball(request):
-     
-     return render(request,'app/shedule_volleyball.html')
+     team=Volleyball.objects.all()
+
+     context={'team':team}   
+     return render(request,'app/shedule_volleyball.html',context)
 
 def shedule_kabaddi(request):
-     
-     return render(request,'app/shedule_kabaddi.html')
+     team=Kabaddi.objects.all()
+
+     context={'team':team}     
+     return render(request,'app/shedule_kabaddi.html',context)
 
 def shedule_badminton(request):
-     
-     return render(request,'app/shedule_badminton.html')
+     team=Badminton.objects.all()
+
+     context={'team':team}
+     return render(request,'app/shedule_badminton.html',context)
 
 def shedule_table(request):
-     return render(request,'app/shedule_table.html')
+     team=Table.objects.all()
+
+     context={'team':team}
+     return render(request,'app/shedule_table.html',context)
 
 def shedule_chess(request):
-     return render(request,'app/shedule_chess.html')
+     team=Chess.objects.all()
+
+     context={'team':team}
+     return render(request,'app/shedule_chess.html',context)
 
 def shedule_highjump(request):
      return render(request,'app/shedule_highjump.html')

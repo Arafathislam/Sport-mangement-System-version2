@@ -479,3 +479,7 @@ class Contact(models.Model):
 
      def __str__(self):
          return self.fname
+
+
+# class Badminton_Time(models.model):
+#     e_1=models.CharField(max_length=200)

@@ -4,36 +4,22 @@
                     <h1 class="text-center mt-2">Badminton Shedule</h1>
                     <hr>
 <div class="text-center mt-4">
-    <h3>Super Eight</h3>
+    <h3>All Team</h3>
     <table class="table table-success table-hover">
         <thead>
           <tr>
-            <th scope="col">Group A</th>
-            <th scope="col">Group B</th>
-            <th scope="col">Time</th>
+            <th>Team Name</th>
+
           </tr>
         </thead>
         <tbody>
+          {%for t in team%}
           <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>Saturday 2PM</td>
+            <td>{{t.teamname}}</td>
           </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>Saturday 2PM</td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>Saturday 2PM</td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>Saturday 2PM</td>
-          </tr>
+          {%endfor%}
+
+
         </tbody>
       </table>
 </div>
