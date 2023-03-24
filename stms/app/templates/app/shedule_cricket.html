@@ -9,23 +9,29 @@
                           <thead>
                             <tr>
                               <th>Team Name</th>
-                  
+                              <th>Captain Name</th>
+                              <th>Time</th>
+                    
                             </tr>
                           </thead>
                           <tbody>
                             {%for t in team%}
                             <tr>
                               <td>{{t.teamname}}</td>
+                              <td>{{t.captainname}}</td>
+                              {%for t in time%}
+                              <td>{{t.cricket_time}}</td>
+                              {%endfor%}
                             </tr>
                             {%endfor%}
-                  
-                  
+                    
+                    
                           </tbody>
                         </table>
-                  </div>
+                    </div>
                   
 
-
+{%for f in final%}
 <div class="text-center mt-4">
     <h3>Semi Final</h3>
     <table class="table table-success table-hover">
@@ -38,14 +44,14 @@
         </thead>
         <tbody>
           <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>Saturday 2PM</td>
+            <td>{{f.cricket_team1}}</td>
+            <td>{{f.cricket_team2}}</td>
+            <td>{{f.cricket_time1}}</td>
           </tr>
           <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>Saturday 2PM</td>
+            <td>{{f.cricket_team3}}</td>
+            <td>{{f.cricket_team4}}</td>
+            <td>{{f.cricket_time2}}</td>
           </tr>
         </tbody>
       </table>
@@ -63,14 +69,14 @@
         </thead>
         <tbody>
           <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>Saturday 2PM</td>
+            <td>{{f.cricket_finalteam1}}</td>
+            <td>{{f.cricket_finalteam2}}</td>
+            <td>{{f.cricket_finaltime}}</td>
           </tr>
         </tbody>
       </table>
 </div>
 
-
+{%endfor%}
 
 {%endblock%}

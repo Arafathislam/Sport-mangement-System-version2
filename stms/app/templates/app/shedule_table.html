@@ -3,73 +3,81 @@
 {%block content%}
                     <h1 class="text-center mt-2">Table Tennis Shedule</h1>
                     <hr>
+                      <div class="text-center mt-4">
+                        <h3>All Team</h3>
+                        <table class="table table-success table-hover">
+                            <thead>
+                              <tr>
+                                <th>Team Name</th>
+                                <th>Captin Name</th>
+                                <th>Time</th>
+                    
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {%for t in team%}
+                              <tr>
+                                <td>{{t.teamname}}</td>
+                                <td>{{t.captainname}}</td>
+                                {%for t in time%}
+                                <td>{{t.table_time}}</td>
+                                {%endfor%}
+                              </tr>
+                              {%endfor%}
+                    
+                    
+                            </tbody>
+                          </table>
+                    </div>
+                  
+
+                    {%for f in final%}
                     <div class="text-center mt-4">
-                      <h3>All Team</h3>
-                      <table class="table table-success table-hover">
-                          <thead>
-                            <tr>
-                              <th>Team Name</th>
-                  
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {%for t in team%}
-                            <tr>
-                              <td>{{t.teamname}}</td>
-                            </tr>
-                            {%endfor%}
-                  
-                  
-                          </tbody>
-                        </table>
-                  </div>
-                  
-
-
-<div class="text-center mt-4">
-    <h3>Semi Final</h3>
-    <table class="table table-success table-hover">
-        <thead>
-          <tr>
-            <th scope="col">Group A</th>
-            <th scope="col">Group B</th>
-            <th scope="col">Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>Saturday 2PM</td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>Saturday 2PM</td>
-          </tr>
-        </tbody>
-      </table>
-</div>
-
-<div class="text-center mt-4">
-    <h3>Final</h3>
-    <table class="table table-success table-hover">
-        <thead>
-          <tr>
-            <th scope="col">Group A</th>
-            <th scope="col">Group B</th>
-            <th scope="col">Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>Saturday 2PM</td>
-          </tr>
-        </tbody>
-      </table>
-</div>
+                        <h3>Semi Final</h3>
+                        <table class="table table-success table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">Group A</th>
+                                <th scope="col">Group B</th>
+                                <th scope="col">Time</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>{{f.table_team1}}</td>
+                                <td>{{f.table_team2}}</td>
+                                <td>{{f.table_time1}}</td>
+                              </tr>
+                              <tr>
+                                <td>{{f.table_team3}}</td>
+                                <td>{{f.table_team4}}</td>
+                                <td>{{f.table_time2}}</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <h3>Final</h3>
+                        <table class="table table-success table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">Group A</th>
+                                <th scope="col">Group B</th>
+                                <th scope="col">Time</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>{{f.table_finalteam1}}</td>
+                                <td>{{f.table_finalteam2}}</td>
+                                <td>{{f.table_finaltime}}</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    
+                    {%endfor%}
 
 
 

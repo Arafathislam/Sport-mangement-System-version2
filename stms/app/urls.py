@@ -61,4 +61,5 @@ urlpatterns = [
     path('shedule_sprint/',views.shedule_sprint,name="shedule_sprint"),
     path('shedule_rubiks/',views.shedule_rubiks,name="shedule_rubiks"),
     path('score/',views.score,name="score"),
+    path('score_all/',views.score_all,name="score_all"),
 ]

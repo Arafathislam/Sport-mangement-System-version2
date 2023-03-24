@@ -687,73 +687,114 @@ def shedule(request):
 
 def shedule_cricket(request):
      team=Cricket.objects.all()
-
-     context={'team':team}
+     time=Time_shedule.objects.all()
+     final=Semi_Final.objects.all()
+     context={'team':team, 'time':time,'final':final}
      return render(request,'app/shedule_cricket.html',context)
 
 
 def shedule_football(request):
      team=Football.objects.all()
-
-     context={'team':team}     
+     time=Time_shedule.objects.all()
+     final=Semi_Final.objects.all()
+     context={'team':team, 'time':time,'final':final}    
      return render(request,'app/shedule_football.html',context)
 
 def shedule_volleyball(request):
      team=Volleyball.objects.all()
-
-     context={'team':team}   
+     time=Time_shedule.objects.all()
+     final=Semi_Final.objects.all()
+     context={'team':team, 'time':time,'final':final}  
      return render(request,'app/shedule_volleyball.html',context)
 
 def shedule_kabaddi(request):
      team=Kabaddi.objects.all()
-
-     context={'team':team}     
+     time=Time_shedule.objects.all()
+     final=Semi_Final.objects.all()
+     context={'team':team, 'time':time,'final':final}    
      return render(request,'app/shedule_kabaddi.html',context)
 
 def shedule_badminton(request):
      team=Badminton.objects.all()
-
-     context={'team':team}
+     time=Time_shedule.objects.all()
+     final=Semi_Final.objects.all()
+     context={'team':team, 'time':time,'final':final}
      return render(request,'app/shedule_badminton.html',context)
 
 def shedule_table(request):
      team=Table.objects.all()
-
-     context={'team':team}
+     time=Time_shedule.objects.all()
+     final=Semi_Final.objects.all()
+     context={'team':team, 'time':time,'final':final}
      return render(request,'app/shedule_table.html',context)
 
 def shedule_chess(request):
      team=Chess.objects.all()
-
-     context={'team':team}
+     time=Time_shedule.objects.all()
+     final=Semi_Final.objects.all()
+     context={'team':team, 'time':time,'final':final}
      return render(request,'app/shedule_chess.html',context)
 
+
+
+
+
+
+
 def shedule_highjump(request):
-     return render(request,'app/shedule_highjump.html')
+     team=HighJump.objects.all()
+     time=Time_shedule.objects.all()
+     context={'team':team ,'time':time}
+     return render(request,'app/shedule_highjump.html',context)
 
 def shedule_pc1(request):
-     return render(request,'app/shedule_pc1.html')
+     team=PC1.objects.all()
+     time=Time_shedule.objects.all()
+     context={'team':team ,'time':time}
+     return render(request,'app/shedule_pc1.html',context)
 
 def shedule_pc3(request):
-     return render(request,'app/shedule_pc3.html')
+     team=PC3.objects.all()
+     time=Time_shedule.objects.all()
+     context={'team':team ,'time':time}
+     return render(request,'app/shedule_pc3.html',context)
 
 def shedule_math(request):
-     return render(request,'app/shedule_math.html')
+     team=Math.objects.all()
+     time=Time_shedule.objects.all()
+     context={'team':team ,'time':time}
+     return render(request,'app/shedule_math.html',context)
 
 def shedule_ict(request):
-     return render(request,'app/shedule_ict.html')
+     team=ICT.objects.all()
+     time=Time_shedule.objects.all()
+     context={'team':team ,'time':time}
+     return render(request,'app/shedule_ict.html',context)
 
 def shedule_video(request):
-     return render(request,'app/shedule_video.html')
+     team=Video.objects.all()
+     time=Time_shedule.objects.all()
+     context={'team':team ,'time':time}
+     return render(request,'app/shedule_video.html',context)
 
 def shedule_sprint(request):
-     return render(request,'app/shedule_sprint.html')
+     team=Sprint.objects.all()
+     time=Time_shedule.objects.all()
+     context={'team':team ,'time':time}
+     return render(request,'app/shedule_sprint.html',context)
 
 def shedule_rubiks(request):
-     return render(request,'app/shedule_rubiks.html')
+     team=Rubkis.objects.all()
+     time=Time_shedule.objects.all()
+     context={'team':team ,'time':time}
+     return render(request,'app/shedule_rubiks.html',context)
 
 def score(request):
      return render(request,'app/score.html')
+
+def score_all(request):
+     return render(request,'app/score_all.html')
+
 
 
 

@@ -480,6 +480,100 @@ class Contact(models.Model):
      def __str__(self):
          return self.fname
 
+# time shedule for first round
+class Time_shedule(models.Model):
+        cricket_time=models.CharField(max_length=200,blank=True)
+        football_time=models.CharField(max_length=200,blank=True)
+        volleyball_time=models.CharField(max_length=200,blank=True)
+        kabaddi_time=models.CharField(max_length=200,blank=True)
+        chess_time=models.CharField(max_length=200,blank=True)
+        highjump_time=models.CharField(max_length=200,blank=True)
+        pc1_time=models.CharField(max_length=200,blank=True)
+        math_time=models.CharField(max_length=200,blank=True)
+        ict_time=models.CharField(max_length=200,blank=True)
+        rubiks_time=models.CharField(max_length=200,blank=True)
+        table_time=models.CharField(max_length=200,blank=True)
+        sprint_time=models.CharField(max_length=200,blank=True)
+        badminton_time=models.CharField(max_length=200,blank=True)
+        pc3_time=models.CharField(max_length=200,blank=True)
+        video_time=models.CharField(max_length=200,blank=True)
 
-# class Badminton_Time(models.model):
-#     e_1=models.CharField(max_length=200)
+# s1/s2/s3/s4 team name and st1/st2 time
+class Semi_Final(models.Model):
+    cricket_team1=models.CharField(max_length=200,blank=True)
+    cricket_team2=models.CharField(max_length=200,blank=True)
+    cricket_time1=models.CharField(max_length=200,blank=True)
+    cricket_team3=models.CharField(max_length=200,blank=True)
+    cricket_team4=models.CharField(max_length=200,blank=True)
+    cricket_time2=models.CharField(max_length=200,blank=True)
+    cricket_finalteam1=models.CharField(max_length=200,blank=True)
+    cricket_finalteam2=models.CharField(max_length=200,blank=True)
+    cricket_finaltime=models.CharField(max_length=200,blank=True)
+
+    football_team1=models.CharField(max_length=200,blank=True)
+    football_team2=models.CharField(max_length=200,blank=True)
+    football_time1=models.CharField(max_length=200,blank=True)
+    football_team3=models.CharField(max_length=200,blank=True)
+    football_team4=models.CharField(max_length=200,blank=True)
+    football_time2=models.CharField(max_length=200,blank=True)
+    football_finalteam1=models.CharField(max_length=200,blank=True)
+    football_finalteam2=models.CharField(max_length=200,blank=True)
+    football_finaltime=models.CharField(max_length=200,blank=True)
+
+    volleyball_team1=models.CharField(max_length=200,blank=True)
+    volleyball_team2=models.CharField(max_length=200,blank=True)
+    volleyball_time1=models.CharField(max_length=200,blank=True)
+    volleyball_team3=models.CharField(max_length=200,blank=True)
+    volleyball_team4=models.CharField(max_length=200,blank=True)
+    volleyball_time2=models.CharField(max_length=200,blank=True)
+    volleyball_finalteam1=models.CharField(max_length=200,blank=True)
+    volleyball_finalteam2=models.CharField(max_length=200,blank=True)
+    volleyball_finaltime=models.CharField(max_length=200,blank=True)
+
+    kabaddi_team1=models.CharField(max_length=200,blank=True)
+    kabaddi_team2=models.CharField(max_length=200,blank=True)
+    kabaddi_time1=models.CharField(max_length=200,blank=True)
+    kabaddi_team3=models.CharField(max_length=200,blank=True)
+    kabaddi_team4=models.CharField(max_length=200,blank=True)
+    kabaddi_time2=models.CharField(max_length=200,blank=True)
+    kabaddi_finalteam1=models.CharField(max_length=200,blank=True)
+    kabaddi_finalteam2=models.CharField(max_length=200,blank=True)
+    kabaddi_finaltime=models.CharField(max_length=200,blank=True)
+
+    chess_team1=models.CharField(max_length=200,blank=True)
+    chess_team2=models.CharField(max_length=200,blank=True)
+    chess_time1=models.CharField(max_length=200,blank=True)
+    chess_team3=models.CharField(max_length=200,blank=True)
+    chess_team4=models.CharField(max_length=200,blank=True)
+    chess_time2=models.CharField(max_length=200,blank=True)
+    chess_finalteam1=models.CharField(max_length=200,blank=True)
+    chess_finalteam2=models.CharField(max_length=200,blank=True)
+    chess_finaltime=models.CharField(max_length=200,blank=True)
+
+
+    table_team1=models.CharField(max_length=200,blank=True)
+    table_team2=models.CharField(max_length=200,blank=True)
+    table_time1=models.CharField(max_length=200,blank=True)
+    table_team3=models.CharField(max_length=200,blank=True)
+    table_team4=models.CharField(max_length=200,blank=True)
+    table_time2=models.CharField(max_length=200,blank=True)
+    table_finalteam1=models.CharField(max_length=200,blank=True)
+    table_finalteam2=models.CharField(max_length=200,blank=True)
+    table_finaltime=models.CharField(max_length=200,blank=True)
+
+
+    badminton_team1=models.CharField(max_length=200,blank=True)
+    badminton_team2=models.CharField(max_length=200,blank=True)
+    badminton_time1=models.CharField(max_length=200,blank=True)
+    badminton_team3=models.CharField(max_length=200,blank=True)
+    badminton_team4=models.CharField(max_length=200,blank=True)
+    badminton_time2=models.CharField(max_length=200,blank=True)
+    badminton_finalteam1=models.CharField(max_length=200,blank=True)
+    badminton_finalteam2=models.CharField(max_length=200,blank=True)
+    badminton_finaltime=models.CharField(max_length=200,blank=True)
+
+
+
+
+
+
